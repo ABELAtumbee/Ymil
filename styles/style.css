@@ -5,3 +5,49 @@
   --color-heading: #210e6b;
   --color-body: #918ca4;
 }
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Inter, Arial, Arial, Helvetica, sans-serif;
+  font-size: 2.4rem;
+  color: var(--color-body);
+  line-height: 1.5;
+}
+
+p {
+  margin: 0;
+}
+
+/* TYPOGRAPHY */
+h1,
+h2,
+h3 {
+  color: var(--color-heading);
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 7rem;
+}
+
+h2 {
+  font-size: 4rem;
+  margin-bottom: 2.5rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+@media screen and (min-width: 1024px) {
+  h1 {
+    font-size: 8rem;
+  }
+
+  h3 {
+    font-size: 2.4rem;
+  }
+}
