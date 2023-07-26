@@ -144,3 +144,24 @@ a {
     font-size: 1.8rem;
   }
 }
+
+/* ICONS */
+.icon {
+  width: 4rem;
+  height: 4rem;
+}
+
+.icon--primary {
+  border-radius: 100%;
+  fill: var(--color-primary);
+}
+
+.icon-container {
+  display: inline-flex;
+  background: #f3f9fa;
+  width: 6.4rem;
+  height: 6.4rem;
+  border-radius: 100%;
+  justify-content: center;
+  align-items: center;
+}
