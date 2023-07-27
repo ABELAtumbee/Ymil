@@ -189,11 +189,18 @@ a {
   font-weight: bold;
   text-transform: uppercase;
   white-space: nowrap;
-  padding: 2rem 4rem;
+  padding: 2rem 2rem;
 }
 
 .btn--block {
   width: 100%;
+}
+
+.btn .icon {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1rem;
+  vertical-align: middle;
 }
 
 .btn--accent {
@@ -270,15 +277,19 @@ a {
   border: 1px solid var(--color-border);
   border-radius: var(--border-radius);
   display: flex;
-  padding: 0.5rem;
-  box-shadow: 0 0 0;
+  max-width: 100%;
 }
 
 .input-group .input {
-  flex-grow: 1;
   border: 0;
+  flex-grow: 1;
 }
 
+.input-group .btn {
+  margin: 0.5rem 1rem;
+}
+
+/* CARD */
 .card {
   border: 1px solid var(--color-border);
   border-radius: 10px;
@@ -608,6 +619,7 @@ a {
 .container {
   max-width: 1140px;
   margin: 0 auto;
+  padding: 2rem;
 }
 
 /* NAVIGATION BAR */
@@ -701,5 +713,43 @@ a {
   .hero__header {
     text-align: left;
     align-self: center;
+  }
+}
+
+/* BLOCK DOMAIN */
+
+.block__domain .input-group {
+  margin: 0 auto;
+  max-width: 670px;
+  border: 0;
+  box-shadow: 0 0 30px 20px #e6ebee;
+}
+
+.block__domain .btn {
+  max-width: 100%;
+}
+
+.block-domain__prices {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 8rem);
+  justify-items: center;
+  font-size: 2rem;
+  font-weight: 600;
+  max-width: 700px;
+  margin: 3rem auto;
+}
+
+.block-domain__prices .list__item {
+  white-space: nowrap;
+}
+
+@media screen and (min-width: 768px) {
+  .block-domain__prices {
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  }
+
+  .block__domain .list__item {
+    padding: 5rem;
   }
 }
