@@ -159,6 +159,10 @@ a {
   height: 4rem;
 }
 
+.icon--white {
+  fill: white;
+}
+
 .icon--primary {
   border-radius: 100%;
   fill: var(--color-primary);
