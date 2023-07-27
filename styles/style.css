@@ -221,6 +221,20 @@ a {
   background: #3a8ffd;
 }
 
+.btn--secondary {
+  background: var(--color-secondary);
+  transition: background 0.25s;
+}
+
+.btn--secondary:hover {
+  background: #1cc2d7;
+}
+
+.btn--streched {
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+
 @media screen and (min-width: 1024px) {
   .btn {
     font-size: 1.5rem;
@@ -481,5 +495,41 @@ a {
 
   .testimonial__company {
     font-size: 1.6rem;
+  }
+}
+
+/* CALLOUT */
+.callout {
+  color: #fff;
+  padding: 3rem;
+}
+
+.callout--primary {
+  background: var(--color-primary);
+}
+
+.callout__heading {
+  color: #fff;
+  margin-top: 0;
+  font-size: 4rem;
+}
+
+.callout__body {
+  opacity: 0.8;
+}
+
+.callout__btn {
+  margin-top: 3rem;
+  justify-self: center;
+  align-self: center;
+}
+
+@media screen and (min-width: 768px) {
+  .grid--1x2 {
+    grid-template-columns: 1fr auto;
+  }
+  .callout__btn {
+    justify-self: start;
+    margin: 0 3rem;
   }
 }
