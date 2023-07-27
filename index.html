@@ -14,18 +14,28 @@
     />
   </head>
   <body>
-    <header class="block block--dark block--skewed-left hero--component">
-      <h1 class="block__heading hero__heading">
-        ChataLock The Best Chatting Platform
-      </h1>
-      <p class="hero__content">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus,
-        tenetur commodi? Reprehenderit consectetur corrupti doloribus labore
-        repellendus molestias aliquam esse deserunt, est alias fuga? Molestias
-        dolor nam totam quod harum.
-      </p>
-      <a href="" class="btn btn--accent btn--streched">get started</a>
-    </header>
+    <section class="block block--dark hero hero--skewed-left">
+      <div class="container grid grid--1x2">
+        <div class="block__header hero__header">
+          <h1 class="block__heading hero__heading">ChataLock Platform</h1>
+          <p class="hero__content">
+            Lorem ipsum dolor sit amet consectetur adipisicing
+          </p>
+          <a href="" class="btn btn--accent btn--streched">get started</a>
+        </div>
+        <picture>
+          <source
+            type="images/webp"
+            srcset="images/banner.webp 1x, images/banner2x.webp 2x"
+          />
+          <source
+            type="images/png"
+            srcset="images/banner.png 1x, images/banner2x.png 2x"
+          />
+          <img class="hero__banner" src="/images/banner.png" alt="" />
+        </picture>
+      </div>
+    </section>
     <script src="js/main.js"></script>
   </body>
 </html>

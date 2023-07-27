@@ -575,8 +575,7 @@ a {
 /* BLOCK */
 .block {
   --padding-vertical: 6rem;
-  margin: 2rem;
-  padding: 2rem 6rem;
+  padding: 2rem var(--padding-vertical);
 }
 
 .block__header {
@@ -677,4 +676,30 @@ a {
 /* HERO COMPONENTS */
 .hero__content {
   margin: 2rem 0 5rem;
+  letter-spacing: 1px;
+  font-size: 2rem;
+}
+
+.hero__heading {
+  margin-bottom: 0;
+}
+
+.hero--skewed-left {
+  padding-bottom: 10rem;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+}
+
+.hero__banner {
+  width: 100%;
+  margin-top: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-top: 0;
+  }
+  .hero__header {
+    text-align: left;
+    align-self: center;
+  }
 }
