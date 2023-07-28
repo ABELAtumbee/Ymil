@@ -315,11 +315,20 @@ a {
   color: #fff;
 }
 
+.card--primary .badge--primary {
+  background: #2870cf;
+}
+
 .card--secondary .badge--secondary {
   background: #02cdf1;
 }
 
 /* PLAN */
+.plan {
+  margin: 2rem 0;
+  transition: all 0.3s ease-out;
+}
+
 .plan__name {
   font-size: 2.4rem;
   color: #fff;
@@ -349,6 +358,10 @@ a {
   white-space: nowrap;
 }
 
+.plan--popular {
+  transform: scale(1.1);
+}
+
 .plan--popular .card__header {
   position: relative;
 }
@@ -358,8 +371,8 @@ a {
   width: 40px;
   display: inline-block;
   position: absolute;
-  top: -6px;
-  right: 5%;
+  top: -13px;
+  right: 3%;
 }
 
 @media screen and (min-width: 1024px) {
@@ -752,4 +765,50 @@ a {
   .block__domain .list__item {
     padding: 5rem;
   }
+}
+
+/* BLOCK PLAN*/
+
+.block-plan .card {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.plan:hover {
+  transform: scale(1.05);
+}
+
+.plan--popular:hover {
+  transform: scale(1.15);
+}
+
+@media screen and (min-width: 1024px) {
+  .block__plan .plan {
+    column-gap: 2rem;
+  }
+}
+
+/* FEATURE BLOCK*/
+.feature {
+  margin: 12rem 0;
+}
+
+.feature__header {
+  margin-bottom: 8rem;
+}
+
+.feature__content {
+  margin-bottom: 5rem;
+
+  min-width: 350px;
+  width: 100%;
+}
+
+.feature-content__heading {
+  margin-top: 2rem;
+}
+
+.feature__image {
+  width: 100%;
+  max-width: 570px;
 }
