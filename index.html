@@ -12,6 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
 
   <body>
@@ -32,14 +33,14 @@
       </header>
       <section class="block block--dark hero hero--skewed-left">
         <div class="container grid grid--1x2">
-          <div class="block__header hero__header">
+          <div class="block__header hero__header" data-aos="fade-right" >
             <h1 class="block__heading hero__heading">ChataLock Platform</h1>
             <p class="hero__content">
               Lorem ipsum dolor sit amet consectetur adipisicing
             </p>
             <a href="" class="btn btn--accent btn--streched">get started</a>
           </div>
-          <picture>
+          <picture data-aos="fade-left">
             <source
               type="images/webp"
               srcset="images/banner.webp 1x, images/banner2x.webp 2x"
@@ -54,7 +55,7 @@
       </section>
       <section class="container">
         <div class="block__domain">
-          <header class="block__header">
+          <header class="block__header" data-aos="zoom-in-up">
             <h2>The Best Chatting Platform</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
@@ -87,7 +88,7 @@
           </ul>
         </div>
       </section>
-      <div class="container block-plan">
+      <div class="container block-plan" data-aos="fade-up">
         <div class="grid grid--1x3">
           <div>
             <div class="plan">
@@ -158,9 +159,9 @@
         </div>
       </div>
       <section class="container">
-        <div>
+        <div class="feature">
           <header class="block__header feature__header">
-            <h3>Host On The Cloud to Keep Growing</h3>
+            <h3 class="block__heading">Host On The Cloud to Keep Growing</h3>
             <p>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum ea
               maiores corporis facere aspernatur. Beatae tempora tempore quos quas
@@ -168,7 +169,7 @@
             </p>
           </header>
           <article class="grid grid--1x2 feature">
-            <div class="feature__content">
+            <div class="feature__content" data-aos="fade-right">
               <span class="icon-container">
                 <svg class="icon icon--primary">
                   <use xlink:href="images/sprite.svg#easy"></use>
@@ -184,7 +185,7 @@
               </p>
               <a href="#" class="link-arrow">LEARN MORE</a>
             </div>
-            <picture>
+            <picture data-aos="fade-up-left">
               <source
                 type="images/webp"
                 srcset="images/easy.webp 1x, images/easy2x.webp 2x"
@@ -197,7 +198,7 @@
             </picture>
           </article>
           <article class="grid grid--1x2 feature">
-            <div class="feature__content">
+            <div class="feature__content" data-aos="zoom-out-up">
               <span class="icon-container">
                 <svg class="icon icon--primary">
                   <use xlink:href="images/sprite.svg#computer"></use>
@@ -213,7 +214,7 @@
               </p>
               <a href="#" class="link-arrow">LEARN MORE</a>
             </div>
-            <picture>
+            <picture data-aos="flip-down">
               <source
                 type="images/webp"
                 srcset="images/easy.webp 1x, images/easy2x.webp 2x"
@@ -226,7 +227,7 @@
             </picture>
           </article>
           <article class="grid grid--1x2 feature">
-            <div class="feature__content">
+            <div class="feature__content"data-aos="fade-right" >
               <span class="icon-container">
                 <svg class="icon icon--primary">
                   <use xlink:href="images/sprite.svg#settings"></use>
@@ -242,7 +243,7 @@
               </p>
               <a href="#" class="link-arrow">LEARN MORE</a>
             </div>
-            <picture>
+            <picture data-aos="fade-down">
               <source
                 type="images/webp"
                 srcset="images/easy.webp 1x, images/easy2x.webp 2x"
@@ -255,7 +256,7 @@
             </picture>
           </article>
           <article class="grid grid--1x2 feature">
-            <div class="feature__content">
+            <div class="feature__content" data-aos="fade-up">
               <span class="icon-container">
                 <svg class="icon icon--primary">
                   <use xlink:href="images/sprite.svg#clock"></use>
@@ -271,7 +272,7 @@
               </p>
               <a href="#" class="link-arrow">LEARN MORE</a>
             </div>
-            <picture>
+            <picture data-aos="fade-up">
               <source
                 type="images/webp"
                 srcset="images/easy.webp 1x, images/easy2x.webp 2x"
@@ -286,6 +287,9 @@
         </div>
       </section>
       <section class="block block--dark block--skewed-right block-showcase">
+        <header class="block__header">
+          <h2>User-Friendly Control Panel</h2>
+        </header>
         <div class="container grid grid--1x2">
           <picture class="block-showcase__image"
             ><img src="images/ipad.png" alt=""
@@ -445,12 +449,16 @@
               <li><a href="#">Cheap ssl Certificate</a></li>
             </ul>
           </section>
-          <section class="footer__brand">
+          <div class="footer__brand">
             <img class="footer__brand-logo" src="images/Chata.jpeg" alt="">
             <p class="footer__copyright">Copyright @ 2023 Ymil</p>
-          </section>
+          </div>
         </div>
       </footer>
     <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   </body>
 </html>
